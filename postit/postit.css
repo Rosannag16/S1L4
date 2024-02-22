@@ -1,0 +1,85 @@
+body {
+    margin-top: 40px;
+    font-family: "Indie Flower", cursive;
+    background-color: rgb(231, 222, 222);
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+#task1,
+#task6 {
+    height: 300px;
+    width: 400px;
+    background-color: #c599ee;
+    font-size: larger;
+    margin-bottom: 75px;
+    box-shadow: 5px 5px #e085ec;
+    text-align: center;
+    font-size: 2.5rem;
+    transform: rotate(-10deg);
+
+}
+
+#task2,
+#task5 {
+    height: 300px;
+    width: 400px;
+    background-color: hsl(56, 71%, 77%);
+    font-size: larger;
+    margin-bottom: 75px;
+    box-shadow: 5px 5px rgb(223, 156, 13);
+    text-align: center;
+    font-size: 2.5rem;
+    transform: rotate(10deg);
+}
+
+
+#task3,
+#task8 {
+    height: 300px;
+    width: 400px;
+    background-color: hsl(241, 86%, 77%);
+    font-size: larger;
+    margin-bottom: 75px;
+    box-shadow: 5px 5px hsl(251, 81%, 59%);
+    text-align: center;
+    font-size: 2.5rem;
+    transform: rotate(-10deg);
+}
+
+
+#task4,
+#task7 {
+    height: 300px;
+    width: 400px;
+    background-color: hwb(0 52% 4%);
+    font-size: larger;
+    margin-bottom: 75px;
+    box-shadow: 5px 5px hsl(0, 90%, 62%);
+    text-align: center;
+    font-size: 2.5rem;
+    transform: rotate(10deg);
+}
+
+[id^="task"]:hover {
+    animation: animazione 0.7s;
+}
+
+
+
+@keyframes animazione {
+    from {
+        transform: scale(1) rotate(-10deg);
+    }
+
+    to {
+        transform: scale(1.2) rotate(0deg);
+    }
+}
